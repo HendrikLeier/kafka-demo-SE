@@ -52,6 +52,8 @@ Run the following command to get into the tools directory. It is assumed that yo
 terminal is currently in the repo's root directory.
 <pre><code>cd tools/python</code></pre>
 
+To use the tools the kafka cluster must be running!
+
 ##### Creating a topic
 Use the following command to get an explanation of the program
 <pre><code>python3.6 create-topic.py -h</code></pre>
@@ -76,6 +78,8 @@ Use the following command to get an explanation of the program
 #### Java tools
 To build the java tools execute 
 <pre><code>mvn install</code></pre>
+
+To use the services the kafka cluster must be running!
 
 ##### Run sum stream service
 Run this command in the root directory of the repo.
