@@ -17,8 +17,8 @@ public class JoinStream {
         props.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG, Serdes.Double().getClass());
 
         StreamsBuilder builder = new StreamsBuilder();
-        KStream<String, Double> left_stream = builder.stream("left_stream_1");
-        KStream<String, Double> right_stream = builder.stream("right_stream_1");
+        KStream<String, Double> left_stream = builder.stream("left_stream");
+        KStream<String, Double> right_stream = builder.stream("right_stream");
 
         KStream<String, Double> joined = left_stream.join(right_stream,
                 Double::sum, JoinWindows.of(Duration.ofSeconds(30)),

@@ -20,7 +20,7 @@ public class SumStream {
         props.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG, Serdes.Double().getClass());
 
         StreamsBuilder builder = new StreamsBuilder();
-        KStream<String, Double> double_stream = builder.stream("sum_input_topic_3");
+        KStream<String, Double> double_stream = builder.stream("sum_input_topic");
         KTable<Windowed<String>, Double> sums = double_stream
                 .flatMapValues(
                         (ValueMapper<Double, Iterable<? extends Double>>) Arrays::asList
