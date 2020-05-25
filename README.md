@@ -47,7 +47,7 @@ You may be asked to enter the root password.
 
 ### Using the provided tools
 
-####Python tools
+#### Python tools
 Run the following command to get into the tools directory. It is assumed that your 
 terminal is currently in the repo's root directory.
 <pre><code>cd tools/python</code></pre>
